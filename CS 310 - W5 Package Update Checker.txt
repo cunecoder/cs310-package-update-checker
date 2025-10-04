@@ -1,0 +1,15 @@
+# Name: CS 310 - W5 Package Update Checker.txt
+# Author: David Marin
+# Created: 9/28/2025
+# Description: Written report for Package Update Checker assignment.
+
+1. How did you get the list of packages?
+    I ran apt list --upgradable and used the python subprocess function with
+    capture_output and text as True to save the list to a python variable.
+
+2. What is the crontab sequence to run the script?
+    I used '0 8 * * 1 /mnt/c/Users/david/cs310/cs310-package-update-checker/pkg-check.py'
+    to run the script every Monday at 8am.
+
+3. Since this script would require root, how do you install a crontab for root?
+    You would just add word sudo in front the word crontab any time you use it.
